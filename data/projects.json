@@ -1,0 +1,12 @@
+[
+    {"name": "Void Cactus Plantation", "element": "Shadow", "region": "Duskfront Vale"},
+    {"name": "Celestial Fern Observatory", "element": "Starlight", "region": "Astra Meadows"},
+    {"name": "Emberbloom Orchard", "element": "Fire", "region": "Blazehorn Ridge"},
+    {"name": "Frostpetal Nursery", "element": "Ice", "region": "Glacierroot Basin"},
+    {"name": "Whispering Moss Conservatory", "element": "Wind", "region": "Echowind Glade"},
+    {"name": "Gloomvine Cultivation Site", "element": "Darkness", "region": "Murkmire Hollow"},
+    {"name": "Luminshroom Growth Chamber", "element": "Light", "region": "Radiant Caverns"},
+    {"name": "Thunderleaf Research Plot", "element": "Storm", "region": "Tempest Plateau"},
+    {"name": "Tidal Orchid Reef Garden", "element": "Water", "region": "Azurebreak Reef"},
+    {"name": "Earthspire Thornyard", "element": "Earth", "region": "Stonebranch Crest"}
+]
