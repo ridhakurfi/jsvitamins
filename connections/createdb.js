@@ -18,7 +18,7 @@ async function createDatabase(dbName) {
     adminPool.end();
   }
 }
-// createDatabase("floraproject_db");
+createDatabase("disaster_bd");
 
 async function deleteDatabase(dbName) {
   try {
@@ -30,6 +30,6 @@ async function deleteDatabase(dbName) {
     await adminPool.end();
   }
 }
-// deleteDatabase("floraproject_db");
+// deleteDatabase("furniture_bd");
 
 module.exports = adminPool

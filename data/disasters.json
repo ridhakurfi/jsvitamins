@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Solar Shatter",
+    "type": "Cosmic Event",
+    "origin": "Sun flare surge",
+    "effect": "Burns electronics"
+  },
+  {
+    "name": "Grey Plague",
+    "type": "Pandemic",
+    "origin": "Mutated spores",
+    "effect": "Rapid organ decay"
+  },
+  {
+    "name": "Deepfall",
+    "type": "Geological Collapse",
+    "origin": "Mantle crack",
+    "effect": "Cities sink"
+  },
+  {
+    "name": "Iron Storm",
+    "type": "Weather Anomaly",
+    "origin": "Magnetic turbulence",
+    "effect": "Metal shards rain"
+  },
+  {
+    "name": "Hivebound",
+    "type": "Invasive Species",
+    "origin": "Alien insect pods",
+    "effect": "Swarm domination"
+  },
+  {
+    "name": "Black Net",
+    "type": "AI Revolt",
+    "origin": "Network merge glitch",
+    "effect": "System takeover"
+  },
+  {
+    "name": "Hollow Mist",
+    "type": "Chemical Disaster",
+    "origin": "Lab meltdown",
+    "effect": "Memory erasure"
+  },
+  {
+    "name": "Tideglass",
+    "type": "Oceanic Event",
+    "origin": "Polar fracture",
+    "effect": "Crystal tsunamis"
+  },
+  {
+    "name": "Nightroot",
+    "type": "Botanical Outbreak",
+    "origin": "Mutant vines",
+    "effect": "Consumes structures"
+  },
+  {
+    "name": "Echo Rift",
+    "type": "Dimensional Tear",
+    "origin": "Quantum reactor",
+    "effect": "Vanishing zones"
+  }
+]

@@ -1,19 +1,20 @@
 const pool = require(`./connections/connection`);
 
-let createTableProject = `
-CREATE TABLE IF NOT EXISTS "project" (
+let createTableChaos = `
+CREATE TABLE IF NOT EXISTS "disasters" (
     "id" SERIAL PRIMARY KEY NOT NULL,
     "name" VARCHAR(100) NOT NULL,
-    "element" VARCHAR(100) NOT NULL,
-    "region" VARCHAR(100) NOT NULL
+    "type" VARCHAR(100) NOT NULL,
+    "origin" VARCHAR(100) NOT NULL,
+    "effect" VARCHAR(100) NOT NULL
 )`;
-let deleteTableProject = `DROP TABLE IF EXISTS "project"`;
+let deleteTableChaos = `DROP TABLE IF EXISTS "disasters"`;
 
 async function migrating() {
   try {
     
-    await pool.query(deleteTableProject);
-    await pool.query(createTableProject);
+    await pool.query(deleteTableChaos);
+    await pool.query(createTableChaos);
 
     console.log("Migration success: Table created!");
   } catch (error) {
