@@ -4,7 +4,7 @@ const action1 = terminal[1];
 const action2 = terminal[2];
 
 switch (command) {
-  case "disastahList":
+  case "disastersList":
     break;
   default:
     break;
