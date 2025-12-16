@@ -1,7 +1,7 @@
 const pool = require(`./connections/connection`);
 const fs = require('fs').promises;
 
-async function insertFurniture() {
+async function insertDisaster() {
     try {
         const values = JSON.parse(await fs.readFile('./data/disasters.json', 'utf-8'))
             .map(dis => { return`(
@@ -23,7 +23,7 @@ async function insertFurniture() {
 }
 
 async function seedDatabase() {
-    await insertFurniture();
+    await insertDisaster();
     await pool.end();
 }
 
