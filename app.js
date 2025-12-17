@@ -15,7 +15,22 @@ switch (command) {
     Controller.getDisasterById(action1);
     break;
   case "createDisaster":
-    Controller.createDisaster(action1, action2, action3, action4);
+    Controller.createDisaster([action1, action2, action3, action4]);
+    break;
+  case "editDisaster":
+    Controller.editDisaster([action1, action2]);
+    break;
+  case "deleteDisaster":
+    Controller.deleteDisaster(action1);
+    break;
+  case "deleteDatabase":
+    Controller.deleteDster();
+    break;
+  case "createTable":
+    Controller.delisaster();
+    break;
+  case "deleteDisaster":
+    Controller.deletisaster();
     break;
   default:
     Controller.mainPage();

@@ -18,7 +18,7 @@ async function createDatabase(dbName) {
     adminPool.end();
   }
 }
-createDatabase("disaster_bd");
+// createDatabase("disaster_bd");
 
 async function deleteDatabase(dbName) {
   try {

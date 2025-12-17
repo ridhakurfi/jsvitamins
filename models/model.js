@@ -28,12 +28,30 @@ class Model {
   }
   static async createDisaster(item) {
     try {
-      let { name, type, origin, effect } = item;
-      console.log(item, "<<<<<<<<");
-      
-      // let result = await pool.query(
-      //   `INSERT INTO "disasters" ("name","type","origin","effect")VALUES (${name},${type},${origin},${effect})`
-      // );
+      let result = await pool.query(
+        `INSERT INTO "disasters" ("name","type","origin","effect")VALUES ('${item[0]}','${item[1]}','${item[2]}','${item[3]}')`
+      );
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  static async editDisaster(item) {
+    try {
+      let result = await pool.query(
+        `UPDATE "disasters"
+      SET name = '${item[1]}'
+      WHERE "id" = ${Number(item[0])}`
+      );
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  static async deleteDisaster(item) {
+    try {
+      let result = await pool.query(`DELETE FROM "disasters"
+      WHERE "id" = ${Number(item)}`);
       return result;
     } catch (error) {
       console.log(error);
