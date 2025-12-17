@@ -1,11 +1,11 @@
 const Controller = require("./controllers/controller");
 
-const arrow = process.argv.slice(2);
-const command = arrow[0];
-const action1 = arrow[1];
-const action2 = arrow[2];
-const action3 = arrow[3];
-const action4 = arrow[4];
+const arr = process.argv.slice(2);
+const command = arr[0];
+const action1 = arr[1];
+const action2 = arr[2];
+const action3 = arr[3];
+const action4 = arr[4];
 
 switch (command) {
   case "disastersList":
