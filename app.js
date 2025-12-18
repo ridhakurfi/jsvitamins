@@ -1,4 +1,7 @@
+const Mutator = require("./connections/createdb");
 const Controller = require("./controllers/controller");
+const Migrator = require("./migration");
+const Seeder = require("./seeding");
 
 const arr = process.argv.slice(2);
 const command = arr[0];
@@ -23,14 +26,20 @@ switch (command) {
   case "deleteDisaster":
     Controller.deleteDisaster(action1);
     break;
-  case "deleteDatabase":
-    Controller.deleteDster();
+  case "clearDatabase": //clear database
+    Mutator.clearDatabase("disaster_bd");
     break;
-  case "createTable":
-    Controller.delisaster();
+  case "deleteDatabase": //delete database
+    Mutator.deleteDatabase("disaster_bd");
     break;
-  case "deleteDisaster":
-    Controller.deletisaster();
+  case "createDatabase": //create database
+    Mutator.createDatabase("disaster_bd");
+    break;
+  case "createTable": //create table/s
+    Migrator.migrating();
+    break;
+  case "seedTable": //seed table/s
+    Seeder.insertDisaster();
     break;
   default:
     Controller.mainPage();

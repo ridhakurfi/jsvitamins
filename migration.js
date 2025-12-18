@@ -10,18 +10,17 @@ CREATE TABLE IF NOT EXISTS "disasters" (
 )`;
 let deleteTableChaos = `DROP TABLE IF EXISTS "disasters"`;
 
-async function migrating() {
-  try {
-    
-    await pool.query(deleteTableChaos);
-    await pool.query(createTableChaos);
+class Migrator {
+  static async migrating() {
+    try {
+      await pool.query(deleteTableChaos);
+      await pool.query(createTableChaos);
 
-    console.log("Migration success: Table created!");
-  } catch (error) {
-    console.error(error);
-  } finally {
-    await pool.end();
+      console.log("Migration success: Table created!");
+    } catch (error) {
+      console.error(error);
+    }
   }
 }
 
-migrating();
+module.exports = Migrator;
