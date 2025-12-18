@@ -3,12 +3,12 @@ const Controller = require("./controllers/controller");
 const Migrator = require("./migration");
 const Seeder = require("./seeding");
 
-const arr = process.argv.slice(2);
-const command = arr[0];
-const action1 = arr[1];
-const action2 = arr[2];
-const action3 = arr[3];
-const action4 = arr[4];
+const arreys = process.argv.slice(2);
+const command = arreys[0];
+const action1 = arreys[1];
+const action2 = arreys[2];
+const action3 = arreys[3];
+const action4 = arreys[4];
 
 switch (command) {
   case "disastersList":
