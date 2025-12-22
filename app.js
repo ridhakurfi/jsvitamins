@@ -11,6 +11,7 @@ const action3 = arreys[3];
 const action4 = arreys[4];
 
 switch (command) {
+  
   case "disastersList":
     Controller.getDisasters();
     break;
